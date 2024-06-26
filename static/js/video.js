@@ -12,5 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
     closeVideoButton.addEventListener('click', function() {
         videoContainer.style.display = 'none';
         video.pause(); 
+        
     });
 });
