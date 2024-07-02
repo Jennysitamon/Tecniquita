@@ -15,13 +15,14 @@ body {
 
 header {
     background: #361219; 
-    height: 100px; 
+    height: 80px;
     width: 100%; 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    padding: 20px 30px;
+    padding: 10px 20px;
     z-index: 10;
+    position: relative;
 }
 
 .logo {
@@ -30,19 +31,23 @@ header {
 }
 
 .logo img {
-    height: 65px;
+    height: 55px;
     margin-right: 15px;
 }
 
 .school-info {
     text-align: center;
     color: #cfd4d2;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .school-info h1 {
     font-size: 1.0rem;
     margin-bottom: 2px;
     font-weight: bold;
+    padding-top: 20px;
+    
 }
 
 .school-info p {
@@ -57,21 +62,23 @@ nav {
 nav ul {
     display: flex;
     align-items: center;
-    margin-right: 15px;
+    margin-right: 10px;
+    margin-top: 10px; 
 }
+
 
 nav ul li {
     position: relative;
-    margin: 0 10px;
+    margin: 0 8px;
 }
 
 nav ul li a {
     color: #d5dcda;
-    font-size: 17px;
-    padding: 10px;
+    font-size: 16px;
+    padding: 8px;
     border-radius: 5px;
     display: flex;
-    align-items: center;
+    align-items: center; 
     text-decoration: none;
 }
 
@@ -112,7 +119,7 @@ nav ul li ul li a {
 }
 
 .checkbtn {
-    font-size: 30px;
+    font-size: 25px;
     color: #ced3d5;
     cursor: pointer;
     display: none; 
@@ -124,6 +131,7 @@ nav ul li ul li a {
 
 @media (max-width: 858px) {
     .checkbtn {
+        font-size: 30px;
         display: block; 
     }
 
@@ -141,11 +149,11 @@ nav ul li ul li a {
     }
 
     nav ul li {
-        margin: 20px 0;
+        margin: 15px 0;
     }
 
     nav ul li a {
-        font-size: 18px;
+        font-size: 16px;
         padding: 5px;
     }
 
@@ -156,6 +164,7 @@ nav ul li ul li a {
     }
 
     #check:checked ~ ul {
+        padding: 0 10px;
         left: 0;
     }
 }
@@ -408,14 +417,13 @@ nav ul li ul li a {
 footer {
     background-color: #361219; 
     color: #cfd4d2;
-    padding: 10px 10px; 
     display: flex; 
-    justify-content: space-between; 
-    align-items: center;
+    font-size: 15px;  
+    padding: 10px 20px; 
 }
 
 @media (max-width: 858px) {
     footer {
-        padding: 10px 15px; 
+        font-size: 0.9rem;  
     }
 }

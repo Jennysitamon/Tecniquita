@@ -1,94 +1,53 @@
 body {
-    background: rgb(153,54,37);
-    background: linear-gradient(91deg, rgba(153,54,37,1) 0%, rgba(208,114,84,1) 29%, rgba(139,69,52,1) 76%);
-    color: #cfd4d2;
+    background: rgb(51, 17, 9);
+    background: linear-gradient(91deg, rgba(79,28,15,1) 7%, rgba(175,105,86,1) 46%, rgba(79,28,16,1) 81%);
 }
 
 .history-content {
-    color: #f0e3d5; 
-    background: rgba(87, 26, 26, 0.63);
-    padding: 20px;
-    border-radius: 10px;
+    color: #f0e3d5;
+    background: rgba(87, 26, 26, 0.8);
+    padding: 30px;
+    border-radius: 15px;
     margin: 20px auto;
-    width: 95%;
-    max-width: 1200px;
-    animation: fadeIn 2s ease-in-out;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out; 
+}
+
+.history-content:hover {
+    transform: scale(1.02); 
 }
 
 .history-title {
-    color: #f0e3d5; 
+    color: #f0e3d5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
     font-weight: bold;
-    animation: fadeInTitle 2s ease-in-out; 
-}
-
-@keyframes fadeInTitle {
-    from {
-        opacity: 0;
-        transform: translateY(-20px); 
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0); 
-    }
+    font-size: 2.5rem; 
+    text-align: center; 
+    margin-bottom: 30px;
 }
 
 .history-content p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     text-align: justify;
     color: #cfd4d2;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
+
 
 .history-content img {
     width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
+    max-width: 800px;
+    border-radius: 15px;
     margin-top: 20px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.801); 
-    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    
 }
 
 .history-content img:hover {
-    box-shadow: 4px 4px 12px rgba(126, 20, 20, 0.4); 
-    transform: scale(1.02);
+    transform: scale(1.05); 
+    opacity: 0.9; 
 }
 
-
-.img-fluid {
-    border-radius: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: auto;
-    transition: opacity 1s ease-in-out;
-}
-
-.animate-img {
-    animation: fadeIn 2s ease-in-out;
-}
-
-.animate-text {
-    animation: slideIn 2s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}

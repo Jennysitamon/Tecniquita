@@ -4,20 +4,15 @@ const imagenes = [
     '/static/img/historia2.png'
 ];
 let indice = 0;
-let primeraCarga = true;
 
 function cambiarImagen() {
-    if (primeraCarga) {
+    historiaImg.style.opacity = 0; 
+    setTimeout(() => {
         historiaImg.src = imagenes[indice]; 
-        primeraCarga = false;
-    } else {
-        historiaImg.style.opacity = 0; 
-        setTimeout(() => {
-            historiaImg.src = imagenes[indice]; 
-            historiaImg.style.opacity = 1; 
-        }, 200); 
-    }
-    indice = (indice + 1) % imagenes.length;
+        historiaImg.style.opacity = 1; 
+    }, 200);
+    indice = (indice + 1) % imagenes.length; 
 }
 
-setInterval(cambiarImagen, 2000); 
+setInterval(cambiarImagen, 4000); 
+

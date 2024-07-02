@@ -10,6 +10,10 @@ h2 {
     font-size: 2.5rem;
     color: #cfd4d2;
     margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slide-up 1s forwards 0.5s;
+
 }
 
 
@@ -19,6 +23,9 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slide-up 1s forwards 0.7s;
 }
 
 .icon-link p {
@@ -50,4 +57,11 @@ h2 {
 
 .icon-link:hover .icon-circle {
     transform: scale(1.1);
+}
+
+@keyframes slide-up {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
