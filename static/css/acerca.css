@@ -1,6 +1,6 @@
 #nosotros {
-    background: rgb(51, 17, 9);
-    background: linear-gradient(91deg, rgba(79,28,15,1) 7%, rgba(175,105,86,1) 46%, rgba(79,28,16,1) 81%);
+    background: rgb(79,28,15);
+    background: linear-gradient(91deg, rgba(79,28,15,1) 1%, rgba(118,77,65,1) 21%, rgba(130,92,81,1) 58%, rgba(79,28,15,1) 100%);
     color: #cfd4d2;
     padding-top: 60px;
     overflow: hidden; 

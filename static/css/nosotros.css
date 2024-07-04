@@ -1,8 +1,9 @@
 body {
     background: rgb(153,54,37);
     background: linear-gradient(91deg, rgba(153,54,37,1) 0%, rgba(208,114,84,1) 29%, rgba(139,69,52,1) 76%);
-    min-height: 100vh; /* Establece el mínimo de altura del body al 100% de la altura de la ventana */
+    min-height: 100vh;
 }
+
 
 h2 {
     font-family: 'Nunito', sans-serif;
