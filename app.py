@@ -26,5 +26,9 @@ def mision():
 def valores():
     return render_template('valores.html')
 
+@app.route('/taller')
+def talleres():
+    return render_template('taller.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
