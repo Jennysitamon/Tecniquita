@@ -30,5 +30,9 @@ def valores():
 def talleres():
     return render_template('taller.html')
 
+@app.route('/norma')
+def norma():
+    return render_template('norma.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
